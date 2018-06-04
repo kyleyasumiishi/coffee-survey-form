@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <title>Coffee Survey</title>
+  <meta name="author" content="Kyle Yasumiishi">
+  <meta name="description" content="Coffee Survey Form">
+  <meta name="keywords" content="FreeCodeCamp, Coffee, Survey, Form">
+  <link href="https://fonts.googleapis.com/css?family=Jaldi:700" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheet.css" type="text/css">
+  <!--FreeCodeCamp Test Suite-->
+  <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects- fcc/master/build/bundle.js"></script>
+  </head>
+  
+  <body>
+    
+    <h1 id="title">Coffee Survey</h1>
+
+    <main>    
+    
+    <p id="description">Grab your favorite caffeinated beverage and let's discuss your coffee habits.</p>
+    
+    <form id="survey-form">
+    
+    <div class="grid-container">
+    <label id="name-label" for="name">* Name:</label>
+    <input id="name" name="name" type="text" placeholder="Enter your name" required>
+    </div>
+    
+    <div class="grid-container">
+    <label id="email-label" for="email">* Email:</label>
+    <input id="email" name="email" type="email" placeholder="Enter your email" required>
+    </div>
+    
+    <div class="grid-container">
+    <label id="number-label" for="number">* Age:</label>
+    <input id="number" name="age" type="number" min="0" max="120" placeholder="Age" required>
+    </div>
+        
+    <div class="grid-container">
+    <label for="dropdown">Are you a coffee drinker?</label>
+    <select id="dropdown" name="drinker-dropdown">
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select>
+    </div>
+    
+    <div class="grid-container">
+    <label id="start-age-label" for="start-age">What age did you started drinking coffee at?</label>
+    <input id="start-age" name="start-age" type="number" min="0" max="100">
+    </div>
+    
+    <div class="grid-container">
+    <label id="daily-cups-dropdown-label" for="daily-cups-dropdown">How many cups of Joe do you consume per day?</label> 
+    <select id="daily-cups-dropdown" name="daily-cups-dropdown">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2" selected>2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5+">5+</option>
+    </select>
+    </label>
+    </div>
+
+    <div class="grid-container">
+    <label id="places-fieldset-label" for="places-fieldset">Select all the places you get your coffee from in a typical week:</label>
+    <fieldset id="places-fieldset">
+    <legend>Select all the places you get your coffee from in a typical week:</legend>
+      <input id="work" type="checkbox" name="places" value="work">
+      <label for="work">Work</label>
+      <br>
+      <input id="home" type="checkbox" name="places" value="home">
+      <label for="home">Brew at home</label>
+      <br>
+      <input id="line" type="checkbox" name="places" value="line">
+      <label for="line">Wait in line at coffeeshop</label>
+      <br>
+      <input id="drive-through" type="checkbox" name="places" value="drive-through">
+      <label for="drive-through">Drive through</label>
+      <br>
+      <input id="store" type="checkbox" name="places" value="store">
+      <label for="store">Store</label>
+    </fieldset>
+    </div>
+
+    <div class="grid-container">
+    <label id="weekly-spending-fieldset-label" for="weekly-spending-fieldset">How much money do you spend on coffee per week:</label>
+    <fieldset id="weekly-spending-fieldset">
+    <legend>How much money do you spend on coffee per week?</legend>
+      <input id="5" type="radio" name="weekly-spending" value="5">
+      <label id="5-label" for="5">$0 - $5</label>
+      <br>
+      <input id="10" type="radio" name="weekly-spending" value="10">
+      <label id="10-label" for="10">$5 - $10</label>
+      <br>
+      <input id="15" type="radio" name="weekly-spending" value="15">
+      <label id="15-label" for="15">$10 - $15</label>
+      <br>
+      <input id="20" type="radio" name="weekly-spending" value="15-20">
+      <label id="20-label" for="20">$15 - $20</label>
+      <br>
+      <input id="25" type="radio" name="weekly-spending" value="25">
+      <label id="25-label" for="25">$20 - $25</label>
+      <br>
+      <input id="25-plus" type="radio" name="weekly-spending" value="25+">
+      <label id="25-plus-label" for="25-plus">$25+</label>
+    </fieldset>
+    </div>
+    
+    <div class="grid-container">
+    <label id="fav-effect-fieldset-label" for="fav-effect-fieldset">What are your <strong>favorite</strong> parts of coffee?</label>
+    <fieldset id="fav-effect-fieldset">
+    <legend>What are your favorite parts of coffee?</legend>
+      <input id="taste-good" type="checkbox" name="fav-effect" value="taste-good">
+      <label id="taste-good-label" for="taste-good">Tastes delicious</label>
+      <br>
+      <input id="smell" type="checkbox" name="fav-effect" value="smell">
+      <label id="smell-label" for="smell">Love the smell</label>
+      <br>
+      <input id="cure-headache" type="checkbox" name="fav-effect" value="cure-headache">
+      <label id="cure-headache-label" for="cure-headache">Alleviates my headaches</label>
+      <br>
+      <input id="social" type="checkbox" name="fav-effect" value="social">
+      <label id="social-label" for="social">Enjoy the social aspects</label>
+      <br>
+      <input id="normal" type="checkbox" name="fav-effect" value="normal">
+      <label id="normal-label" for="normal">Keeps me feeling normal</label>
+      <br>
+      <input id="motivation" type="checkbox" name="fav-effect" value="motivation">
+      <label id="motivation-label" for="motivation">Motivates me</label>
+      <br>
+      <input id="wake" type="checkbox" name="fav-effect" value="wake">
+      <label id="wake-label" for="wake">Helps me wake up</label>
+      <br>
+      <input id="creativity" type="checkbox" name="fav-effect" value="creativity">
+      <label id="creativity-label" for="creativity">Boosts my creativity</label>
+    </fieldset>
+    </div>
+
+    <div class="grid-container">
+    <label id="least-fav-effect-fieldset-label" for="least-fav-effect-fieldset">What are your <em>least</em> favorite parts of coffee?</label>
+    <fieldset id="least-fav-effect-fieldset">
+    <legend>What are your least favorite parts of coffee?</legend>
+      <input id="taste-bad" type="checkbox" name="least-fav-effect" value="taste-bad">
+      <label id="taste-bad-label" for="taste-bad">Tastes nasty</label>
+      <br>
+      <input id="anxiety" type="checkbox" name="least-fav-effect" value="anxiety">
+      <label id="anxiety-label" for="anxiety">Makes me anxious</label>
+      <br>
+      <input id="insomnia" type="checkbox" name="least-fav-effect" value="insomnia">
+      <label id="insomnia-label" for="insomnia">Causes insomnia</label>
+      <br>
+      <input id="stress" type="checkbox" name="least-fav-effect" value="stress">
+      <label id="stress-label" for="stress">Increases my stress levels thoughout the day</label>
+      <br>
+      <input id="addiction" type="checkbox" name="least-fav-effect" value="addiction">
+      <label id="addiction-label" for="addiction">Addictive</label>
+      <br>
+      <input id="coffee-breath" type="checkbox" name="least-fav-effect" value="coffee-breath">
+      <label id="coffee-breath-label" for="coffee-breath">Gives me coffee breath</label>
+      <br>
+      <input id="irritable" type="checkbox" name="least-fav-effect" value="irritable">
+      <label id="irritable-label" for="irritable">Makes me irritable</label>
+      <br>
+      <input id="cost" type="checkbox" name="least-fav-effect" value="cost">
+      <label id="cost-label" for="cost">Expensive</label>
+    </fieldset>
+    </div>
+    
+    <div class="grid-container">
+    <label for="hot-cold">Hot or iced?</label>
+    <select id="hot-cold" name="hot-cold">
+      <option value="hot">Hot</option>
+      <option value="iced">Iced</option>
+    </select>
+    </div>
+    
+    <div class="grid-container">
+    <label id="preferences-label" for="preferences-fieldset">How do you like your coffee?</label>
+    <fieldset id="preferences-fieldset">
+    <legend>How do you take your coffee? </legend>
+      <input id="black" type="radio" name="preferences" value="black">
+      <label for="black">Black</label>
+      <br>
+      <input id="cream" type="radio" name="preferences" value="cream">
+      <label for="cream">With cream</label>
+      <br>
+      <input id="sugar" type="radio" name="preferences" value="sugar">
+      <label for="sugar">With sugar</label>
+      <br>
+      <input id="cream-and-sugar" type="radio" name="preferences" value="cream-and-sugar">
+      <label for="cream-and-sugar">With cream and sugar!</label>
+    </fieldset>
+    </div>
+    
+    <div class="grid-container">
+    <label id="coffee-relationship-label" for="coffee-relationship">Briefly describe your relationship with coffee: </label>
+    <textarea id="coffee-relationship" name="coffee-relationship" rows="3">Enter your comments here</textarea>
+    </div>
+    
+    <br>
+    <button id="submit" type="submit">Submit</button>
+    
+    </form>
+    </main>
+  </body>
+</html>
