@@ -43,6 +43,7 @@ Here's are new concepts I learned by building this project:
 * Creating a gradual CSS linear gradient with the <code>linear-gradient</code> property
 * CSS Flexbox's <code>flex-direction</code> property to create columns
 * CSS Grid's <code>grid-template-columns</code> and <code>grid-column-gap</code> to add columns and create column gaps
+* CSS <code>box-shadow</code> property
 
 ## Technologies Used
 
